@@ -1,5 +1,3 @@
-# Meu Projeto
-
 <div align="center">
 
 # 🛍️ E-commerce de Moda  

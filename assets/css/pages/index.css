@@ -1,0 +1,12 @@
+@import url(./../global/fonts.css);
+@import url(./../global/color.css);
+
+h1{
+    font-family: var(--font-inter);
+    color: var(--color-pink);
+}
+
+h2{
+    font-family: var(--font-rubit);
+    color: var(--color-green);
+}
