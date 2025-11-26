@@ -1,26 +1,44 @@
 @import url(./../global/color.css);
+@import url(./../global/fonts.css);
 
 *{
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    list-style: none;
 }
 
-.header_sistem{
-    display: flex;
-}
-
-.header_sistem{
-    width: 100%;
+.header_sistem{ 
+    width: 97%;
     height: 4rem;
+    padding: 0px 20px;
+    font-family: var(--font-inter);
     background-color: var(--color-green);
 }
 
-.menu_desktop{
-
-}
-.ul_nav_Header{
+.div_header{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+    min-height: 4rem;
+}
+
+
+.header_nav{
+    padding: 0px 0px 0px 30px;
+    margin-right: 60%;
+}
+.ul_nav_Pages_Header{
+    display: flex;
+    gap: 2rem;
+    color: var(--color-white);
+}
+.ul_nav_Pages_Header li a{
+    color: var(--color-white);
+}
+
+
+.ul_Icons_Header{
+    display: flex;
     gap: 1rem;
 }
