@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roupa | Minimalista</title>
+    <link rel="stylesheet" href="../assets/css/pages/produtoCSS.css">
+</head>
+<body>
+
+    <header id="header" ></header>
+
+    <main class="product-page-wrapper">
+        <section class="media-area">
+            <div class="main-image-area">
+
+                <div class="fixed-carousel" id="fixed-carousel">
+
+                    <button class="carousel-nav-btn" id="nav-left" aria-label="Imagem anterior">
+                        &lt;
+                    </button>
+                    <button class="carousel-nav-btn" id="nav-right" aria-label="Próxima imagem">
+                        &gt;
+                    </button>
+
+                    <img id="main-product-image" src="https://via.placeholder.com/600x900/858e72/ffffff?text=Produto+Principal" alt="Imagem principal da roupa" class="desktop-main-image">
+
+                    <div class="fixed-carousel-content" id="mobile-carousel-content">
+                        </div>
+                </div>
+
+                <div class="additional-images-layout scrollable-carousel" id="scrollable-carousel">
+                    <div class="scrollable-content-wrapper">
+                        </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="info-area">
+            <h1 id="product-title" class="product-title">Vestido Midi de Linho</h1>
+            <p id="product-price" class="product-price">R$ 389.90</p>
+            <div class="separator"></div>
+            <div class="option-group">
+                <p class="option-label">Color: <span id="product-color-name">Green</span></p>
+                <div class="color-options" id="color-options"></div>
+            </div>
+            <div class="separator"></div>
+            <div class="option-group">
+                <p class="option-label">SIZE: <span id="product-size-name">P</span></p>
+                <div class="size-options" id="size-options"></div>
+            </div>
+            <div class="separator"></div>
+            <div class="option-group">
+                <p class="option-label">Quantity</p>
+                <div class="quantity-control">
+                    <button id="btn-decrease-quantity" type="button" aria-label="Diminuir quantidade">-</button>
+                    <span id="product-quantity">1</span>
+                    <button id="btn-increase-quantity" type="button" aria-label="Aumentar quantidade">+</button>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="btn add-cart-btn" id="add-cart-btn">Add cart</button>
+                <button class="btn buy-now-btn" id="buy-now-btn">Buy now</button>
+            </div>
+            <div class="description-product">
+                <h3>Descrição do produto</h3>
+                <p id="product-description-text">Um vestido midi em linho misto, com caimento elegante e toque suave. Perfeito para diversas ocasiões, combinando conforto e estilo minimalista. Apresenta decote quadrado e alças ajustáveis.</p>
+            </div>
+            <div class="composition-product">
+                <h3>Composição do Tecido</h3>
+                <ul>
+                    <li>60% Linho</li>
+                    <li>40% Viscose</li>
+                    <li>Instruções de Lavagem: Lavar à mão. Não usar alvejante.</li>
+                </ul>
+            </div>
+
+            <div class="payment-options">
+                <h4>Formas de Pagamento e Condições</h4>
+                <div class="payment-flags">
+                    <img src="/img1.png" alt="Bandeiras de Cartão de Crédito e Débito." loading="lazy">
+                </div>
+                <div class="payment-info">
+                    <p>10x sem juros no cartão de crédito.</p>
+                    <p>5% de desconto via PIX.</p>
+                    <p>Compra Segura | Frete grátis acima de R$ 300,00.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+<footer id="footer"></footer>
+
+<script src="../assets/js/pages/produtoJS.js"></script>
+</body>
+</html>

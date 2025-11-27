@@ -1,0 +1,43 @@
+{
+  "products": [
+    {
+      "id": "12345",
+      "name": "Conjunto Minimalista de Linho",
+      "price": 129.99,
+      "description": "Um conjunto elegante e confortável, feito com linho de alta qualidade. Perfeito para um look moderno e descomplicado.",
+      "sizes": ["P", "M", "G", "GG"],
+      "colors": [
+        {
+          "name": "Green",
+          "swatchImage": "https://get.pxhere.com/photo/clothing-white-dress-fashion-model-shoulder-fashion-lady-waist-bridal-party-dress-gown-haute-couture-blond-joint-fashion-design-beige-photo-shoot-day-dress-bridal-clothing-pattern-long-hair-model-formal-wear-wedding-dress-neck-a-line-trunk-abdomen-cocktail-dress-One-piece-garment-1574329.jpg",
+          "images": [
+            "https://get.pxhere.com/photo/clothing-red-dress-fashion-model-shoulder-gown-cocktail-dress-fashion-haute-couture-beauty-a-line-formal-wear-photo-shoot-joint-fashion-design-Strapless-dress-model-waist-bridal-party-dress-photography-quinceanera-event-tradition-street-fashion-neck-sleeve-prom-day-dress-style-wedding-dress-1531693.jpg",
+            "https://get.pxhere.com/photo/gown-wedding-dress-bride-clothing-dress-bridal-clothing-shoulder-photograph-white-fashion-model-bridal-party-dress-beauty-formal-wear-bridal-accessory-photo-shoot-fashion-bouquet-joint-waist-haute-couture-a-line-long-hair-photography-model-wedding-flower-headpiece-Strapless-dress-hair-accessory-event-cocktail-dress-ceremony-plant-fashion-design-marriage-satin-floristry-fashion-accessory-style-1501417.jpg",
+            "https://get.pxhere.com/photo/clothing-white-dress-fashion-model-shoulder-pink-fashion-beige-standing-joint-fashion-design-day-dress-vintage-clothing-textile-neck-bridal-party-dress-knee-waist-sleeve-formal-wear-cocktail-dress-pattern-photo-shoot-peach-gown-1551545.jpg",
+            "https://get.pxhere.com/photo/white-clothing-photograph-dress-gown-shoulder-fashion-model-beauty-photo-shoot-fashion-formal-wear-standing-wedding-dress-photography-neck-sleeve-outerwear-long-hair-a-line-bridal-clothing-bride-fashion-design-model-haute-couture-tradition-waist-1535551.jpg"
+          ]
+        },
+        {
+          "name": "Rose",
+          "swatchImage": "https://get.pxhere.com/photo/white-clothing-photograph-dress-gown-shoulder-fashion-model-beauty-photo-shoot-fashion-formal-wear-standing-wedding-dress-photography-neck-sleeve-outerwear-long-hair-a-line-bridal-clothing-bride-fashion-design-model-haute-couture-tradition-waist-1535551.jpg",
+          "images": [
+            "https://get.pxhere.com/photo/clothing-red-dress-fashion-model-shoulder-gown-cocktail-dress-fashion-haute-couture-beauty-a-line-formal-wear-photo-shoot-joint-fashion-design-Strapless-dress-model-waist-bridal-party-dress-photography-quinceanera-event-tradition-street-fashion-neck-sleeve-prom-day-dress-style-wedding-dress-1531693.jpg",
+            "https://get.pxhere.com/photo/gown-wedding-dress-bride-clothing-dress-bridal-clothing-shoulder-photograph-white-fashion-model-bridal-party-dress-beauty-formal-wear-bridal-accessory-photo-shoot-fashion-bouquet-joint-waist-haute-couture-a-line-long-hair-photography-model-wedding-flower-headpiece-Strapless-dress-hair-accessory-event-cocktail-dress-ceremony-plant-fashion-design-marriage-satin-floristry-fashion-accessory-style-1501417.jpg",
+            "https://get.pxhere.com/photo/clothing-white-dress-fashion-model-shoulder-pink-fashion-beige-standing-joint-fashion-design-day-dress-vintage-clothing-textile-neck-bridal-party-dress-knee-waist-sleeve-formal-wear-cocktail-dress-pattern-photo-shoot-peach-gown-1551545.jpg",
+            "https://get.pxhere.com/photo/white-clothing-photograph-dress-gown-shoulder-fashion-model-beauty-photo-shoot-fashion-formal-wear-standing-wedding-dress-photography-neck-sleeve-outerwear-long-hair-a-line-bridal-clothing-bride-fashion-design-model-haute-couture-tradition-waist-1535551.jpg"
+          ]
+        },
+        {
+          "name": "Black",
+          "swatchImage": "https://get.pxhere.com/photo/gown-wedding-dress-bride-clothing-dress-bridal-clothing-shoulder-photograph-white-fashion-model-bridal-party-dress-beauty-formal-wear-bridal-accessory-photo-shoot-fashion-bouquet-joint-waist-haute-couture-a-line-long-hair-photography-model-wedding-flower-headpiece-Strapless-dress-hair-accessory-event-cocktail-dress-ceremony-plant-fashion-design-marriage-satin-floristry-fashion-accessory-style-1501417.jpg",
+          "images": [
+            "https://get.pxhere.com/photo/clothing-red-dress-fashion-model-shoulder-gown-cocktail-dress-fashion-haute-couture-beauty-a-line-formal-wear-photo-shoot-joint-fashion-design-Strapless-dress-model-waist-bridal-party-dress-photography-quinceanera-event-tradition-street-fashion-neck-sleeve-prom-day-dress-style-wedding-dress-1531693.jpg",
+            "https://get.pxhere.com/photo/gown-wedding-dress-bride-clothing-dress-bridal-clothing-shoulder-photograph-white-fashion-model-bridal-party-dress-beauty-formal-wear-bridal-accessory-photo-shoot-fashion-bouquet-joint-waist-haute-couture-a-line-long-hair-photography-model-wedding-flower-headpiece-Strapless-dress-hair-accessory-event-cocktail-dress-ceremony-plant-fashion-design-marriage-satin-floristry-fashion-accessory-style-1501417.jpg",
+            "https://get.pxhere.com/photo/clothing-white-dress-fashion-model-shoulder-pink-fashion-beige-standing-joint-fashion-design-day-dress-vintage-clothing-textile-neck-bridal-party-dress-knee-waist-sleeve-formal-wear-cocktail-dress-pattern-photo-shoot-peach-gown-1551545.jpg",
+            "https://get.pxhere.com/photo/white-clothing-photograph-dress-gown-shoulder-fashion-model-beauty-photo-shoot-fashion-formal-wear-standing-wedding-dress-photography-neck-sleeve-outerwear-long-hair-a-line-bridal-clothing-bride-fashion-design-model-haute-couture-tradition-waist-1535551.jpg"
+          ]
+        }
+      ]
+    }
+  ]
+}

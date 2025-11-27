@@ -1,0 +1,418 @@
+/* ======================================= */
+/* 0. CONFIGURAÇÕES GLOBAIS E VARIÁVEIS */
+/* ======================================= */
+:root {
+    --bg-light: #f5eee5;
+    --text-dark: #333;
+    --color-primary: #858e72; /* Verde Oliva */
+    --color-secondary: #d9b8b6; /* Rosa Claro */
+    --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --gray-border: #e0e0e0;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-sans); 
+    color: var(--text-dark);
+    background-color: var(--bg-light); 
+    overflow-x: hidden; 
+}
+
+/* Animação de Rolagem Infinita */
+@keyframes scroll-down {
+    0% { transform: translateY(0%); }
+    100% { transform: translateY(-50%); }
+}
+
+/* ======================================= */
+/* 1. LAYOUT PRINCIPAL E HEADER */
+/* ======================================= */
+
+/* Contador do carrinho */
+#cart-counter {
+    position: absolute;
+    top: -5px; 
+    right: -5px; 
+    background-color: var(--color-secondary); 
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 50%;
+    padding: 2px 5px;
+    min-width: 18px; 
+    text-align: center;
+    line-height: 1;
+    display: none; 
+}
+
+/* Contêiner principal da página */
+.product-page-wrapper {
+    display: flex;
+    min-height: calc(100vh - 3.5rem); 
+    flex-wrap: wrap; 
+}
+
+/* ======================================= */
+/* 2. ÁREA DE MÍDIA (70%) */
+/* ======================================= */
+.media-area {
+    width: 70%;
+    background-color: white; 
+    display: flex;
+    flex-direction: column; 
+    box-sizing: border-box; 
+}
+
+/* Altura da área de imagens principal */
+.main-image-area {
+    display: flex;
+    flex-grow: 1;
+    gap: 5px; 
+    height: 75rem; 
+}
+
+/* Carrossel Fixo (60%) */
+.fixed-carousel {
+    width: 60%;
+}
+.fixed-carousel #main-product-image {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+}
+
+/* Carrossel Móvel (40%) */
+.additional-images-layout.scrollable-carousel {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    position: relative; 
+    height: 100%; 
+}
+.scrollable-content-wrapper {
+    animation: scroll-down 30s linear infinite; 
+    display: flex;
+    flex-direction: column;
+}
+.additional-images-layout.scrollable-carousel img {
+    width: 100%;
+    height: auto; 
+    margin-bottom: 5px; 
+    object-fit: cover;
+}
+
+/* Removida a seção .payment-options daqui */
+
+/* ======================================= */
+/* 3. ÁREA DE INFORMAÇÃO (30%) */
+/* ======================================= */
+.info-area {
+    width: 30%;
+    background-color: var(--bg-light); 
+    padding: 40px 30px;
+    box-sizing: border-box;
+    min-height: 75rem; 
+}
+
+.product-title {
+    font-size: 32px;
+    font-weight: 500; 
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 28px; 
+    font-weight: 600; 
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* Separador com 18px de distância vertical */
+.separator {
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray-border); 
+    margin: 18px 0; 
+}
+
+/* Opções e botões */
+.option-group {
+    margin-bottom: 25px;
+}
+.option-label {
+    font-size: 14px;
+    font-weight: 500; 
+    margin-bottom: 10px;
+}
+.option-label span {
+    font-weight: 400;
+}
+.color-options, .size-options {
+    display: flex;
+    gap: 8px; 
+}
+.color-swatch {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: 1px solid var(--gray-border); 
+    cursor: pointer;
+    border-radius: 3px; 
+    transition: border-color 0.2s ease;
+}
+.color-swatch.active {
+    border: 2px solid var(--color-primary); 
+}
+
+.size-button {
+    background-color: transparent;
+    border: 1px solid var(--gray-border); 
+    padding: 8px 18px; 
+    cursor: pointer;
+    font-weight: 500; 
+    border-radius: 3px; 
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.size-button.active {
+    background-color: var(--color-primary); 
+    color: white;
+    border-color: var(--color-primary);
+}
+.size-button:hover:not(.active) {
+    background-color: #858e72a2; 
+    color: #fff;
+    border-color: #858e72a2;
+}
+
+/* Controle de Quantidade */
+.quantity-control {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--gray-border); 
+    border-radius: 3px;
+    overflow: hidden; 
+}
+.quantity-control button {
+    background-color: transparent;
+    border: none;
+    padding: 8px 12px; 
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--text-dark);
+    transition: background-color 0.2s ease;
+}
+.quantity-control button:hover {
+    background-color: #858e7252; 
+}
+.quantity-control span { 
+    padding: 0 10px;
+    border-left: 1px solid var(--gray-border);
+    border-right: 1px solid var(--gray-border);
+    line-height: 1;
+    min-width: 20px; 
+    text-align: center;
+    display: inline-block; 
+}
+
+/* Botões de Ação */
+.action-buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 15px;
+}
+.btn {
+    flex-grow: 1; 
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600; 
+    font-size: 14px;
+    border-radius: 5px; 
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+.add-cart-btn {
+    background-color: var(--color-secondary); 
+    color: white;
+}
+.buy-now-btn {
+    background-color: var(--color-primary); 
+    color: white;
+}
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Descrição e Composição */
+.description-product {
+    margin-top: 5rem;
+}
+.composition-product {
+    margin-top: 4rem;
+    padding-top: 20px;
+    border-top: 1px solid var(--gray-border);
+}
+.composition-product h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.composition-product ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Seção de Pagamento (Dentro da info-area) */
+.payment-options {
+    /* Adicionando margem superior para separar da Composição */
+    margin-top: 4rem; 
+    padding-top: 20px; 
+    border-top: 1px solid var(--gray-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* Removido o padding lateral para se ajustar ao info-area */
+    box-sizing: border-box; 
+    background-color: transparent; /* Garante que não tenha fundo extra */
+}
+.payment-options h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+.payment-flags {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.payment-flags img {
+    max-width: 180px; 
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+.payment-info p {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0;
+}
+/* A classe .tabs-area continua como display: none */
+
+
+/* ... (Seu CSS anterior para desktop/global) ... */
+
+/* ======================================= */
+/* 4. RODAPÉ E RESPONSIVIDADE */
+/* ======================================= */
+/* ... (Seu CSS para .main-footer) ... */
+
+
+/* --- Responsividade: Telas menores que 1024px --- */
+@media (max-width: 1024px) {
+    .product-page-wrapper {
+        flex-direction: column; 
+        min-height: auto;
+    }
+
+    .media-area {
+        width: 100%; 
+        padding-bottom: 0; /* Remove padding desnecessário */
+        /* Reestrutura a media-area para ser o contêiner do novo carrossel */
+        display: block; 
+    }
+    
+    .info-area {
+        width: 100%; 
+        padding: 30px 20px 40px; 
+        min-height: auto; 
+    }
+    
+    /* REMOVIDO: A altura fixa de 75rem não se aplica mais */
+    .main-image-area {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    /* * NOVO CARROSSEL FIXO HORIZONTAL (Substitui os dois carrosséis de desktop)
+    */
+    .fixed-carousel {
+        width: 100%; 
+        position: relative;
+        overflow-x: hidden; /* Esconde a barra de rolagem nativa */
+    }
+    
+    /* Contêiner interno para as imagens que irá rolar horizontalmente */
+    .fixed-carousel-content {
+        display: flex;
+        overflow-x: scroll; /* Permite a rolagem horizontal */
+        scroll-snap-type: x mandatory; /* Garante que pare em cada imagem */
+        -webkit-overflow-scrolling: touch; /* Melhora a rolagem em iOS */
+        scroll-behavior: smooth; /* Adiciona suavidade ao scroll do botão */
+        /* Removido o gap aqui, o gap será dado pela margem das imagens */
+    }
+
+    .fixed-carousel-content::-webkit-scrollbar {
+        display: none; /* Esconde a barra de rolagem no Chrome/Safari */
+    }
+
+    /* Estilo de cada imagem (item do carrossel) */
+    .fixed-carousel-content img {
+        width: 100%; /* Cada imagem ocupa 100% do viewport do carrossel */
+        /* Aumentado o height para 80vh para acomodar imagens compridas */
+        height: 80vh; 
+        object-fit: cover;
+        flex-shrink: 0; /* Impede que a imagem encolha */
+        scroll-snap-align: start; /* Ponto de encaixe do scroll */
+        display: block;
+    }
+
+    /* O Carrossel Móvel Vertical é completamente removido da visualização */
+    .additional-images-layout.scrollable-carousel {
+        display: none; 
+    }
+    
+    /* Estilo para os botões de navegação do carrossel (Seta) */
+    .carousel-nav-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 10;
+        font-size: 20px;
+        line-height: 1;
+        transition: background-color 0.2s;
+    }
+    .carousel-nav-btn:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    #nav-left { left: 10px; }
+    #nav-right { right: 10px; }
+
+
+    .product-title {
+        font-size: 26px;
+    }
+    .product-price {
+        font-size: 22px;
+    }
+    .action-buttons {
+        flex-direction: column; 
+        gap: 10px;
+    }
+    .payment-options {
+        margin-top: 3rem; 
+        padding-top: 15px;
+    }
+}
