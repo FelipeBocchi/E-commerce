@@ -1,0 +1,26 @@
+@import url(./../global/color.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.header_sistem{
+    display: flex;
+}
+
+.header_sistem{
+    width: 100%;
+    height: 4rem;
+    background-color: var(--color-green);
+}
+
+.menu_desktop{
+
+}
+.ul_nav_Header{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
