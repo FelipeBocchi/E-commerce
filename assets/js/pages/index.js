@@ -1,14 +1,12 @@
 gsap.registerPlugin(ScrollTrigger);
 
-// Fetch do header
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("./layout/header.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("header").innerHTML = data;
-        });
+fetch("./layout/header.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("header").innerHTML = data;
+    });
 });
-
 
 // animação do hero (fade + slide up)
 gsap.from(".div_content_one_section h2", {
